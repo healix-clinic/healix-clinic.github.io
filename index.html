@@ -23,9 +23,74 @@
     "description": "Luxury nutrition and integrative wellness care designed around each patient's biology, lifestyle, and long-term health goals.",
     "logo": "https://healixclinic.org/assets/healix-horizontal-logo.png",
     "founder": {"@type":"Person","name":"Sarah Elmohtaseb"},
-    "sameAs": []
+    "sameAs": [
+      "https://www.instagram.com/healixclinic",
+      "https://www.tiktok.com/@healixclinic",
+      "https://www.facebook.com/people/Healix-Clinic/61591777888760/",
+      "https://www.linkedin.com/company/healix-clinic/"
+    ]
   }
   </script>
+<style>
+
+    .request-follow-text {
+      margin: 22px 0 0;
+      text-align: center;
+      color: var(--emerald, #024735);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.78rem;
+    }
+
+    .request-social-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      margin: 18px 0 8px;
+    }
+
+    .request-social-links a {
+      width: 42px;
+      height: 42px;
+      border-radius: 999px;
+      border: 1px solid rgba(2, 71, 53, 0.22);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--emerald, #024735);
+      background: rgba(250, 248, 244, 0.72);
+      transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+    }
+
+    .request-social-links a:hover,
+    .request-social-links a:focus-visible {
+      transform: translateY(-2px);
+      border-color: rgba(2, 71, 53, 0.48);
+      background: rgba(219, 231, 228, 0.85);
+      outline: none;
+    }
+
+    .request-social-links svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+      display: block;
+    }
+
+    @media (max-width: 480px) {
+      .request-social-links {
+        gap: 10px;
+        margin-top: 16px;
+      }
+
+      .request-social-links a {
+        width: 40px;
+        height: 40px;
+      }
+    }
+</style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -184,23 +249,300 @@
           <p class="eyebrow">Request Consultation</p>
           <h2>Your body has a story. Your care should begin there.</h2>
           <p>Request an introductory consultation and we’ll guide you through the next step.</p>
+
+          <p class="request-follow-text">Follow Healix Clinic</p>
+
+          <div class="request-social-links" aria-label="Healix Clinic social media links">
+            <a href="https://www.instagram.com/healixclinic" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm4.5 3.25A4.75 4.75 0 1 1 7.25 12 4.75 4.75 0 0 1 12 7.25Zm0 2A2.75 2.75 0 1 0 14.75 12 2.75 2.75 0 0 0 12 9.25Zm5-2.1a1.1 1.1 0 1 1-1.1 1.1A1.1 1.1 0 0 1 17 7.15Z"/>
+              </svg>
+            </a>
+            <a href="https://www.tiktok.com/@healixclinic" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M16.6 3c.3 2.5 1.8 4.2 4.4 4.4v3a7.7 7.7 0 0 1-4.3-1.3v6.4c0 3.3-2.4 5.5-5.7 5.5a5.4 5.4 0 0 1-5.7-5.3c0-3.3 2.7-5.7 6.2-5.4v3.1c-1.8-.3-3.1.6-3.1 2.2a2.3 2.3 0 0 0 2.5 2.3c1.5 0 2.5-.9 2.5-2.7V3h3.2Z"/>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/people/Healix-Clinic/61591777888760/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14 8.4V6.7c0-.8.3-1.2 1.3-1.2h1.8V2.3A23 23 0 0 0 14.5 2C11.9 2 10 3.6 10 6.4v2H7v3.5h3V22h4V11.9h2.8l.5-3.5H14Z"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/company/healix-clinic/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6.8 8.8H3.1V21h3.7V8.8ZM5 3a2.1 2.1 0 1 0 0 4.2A2.1 2.1 0 0 0 5 3Zm16 10.9c0-3.3-1.8-5.4-4.6-5.4a4 4 0 0 0-3.6 2h-.1V8.8H9.2V21h3.7v-6.2c0-1.6.9-2.8 2.4-2.8s2 1 2 2.8V21H21v-7.1Z"/>
+              </svg>
+            </a>
+          </div>
+
         </div>
         <form class="consult-form reveal delay-1" action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID" method="POST">
-          <label>
-            Full name
-            <input type="text" name="name" placeholder="First and last name" required />
-          </label>
+          <div class="form-row name-row">
+            <label>
+              First name
+              <input type="text" name="first_name" placeholder="First name" autocomplete="given-name" required />
+            </label>
+            <label>
+              Last name
+              <input type="text" name="last_name" placeholder="Last name" autocomplete="family-name" required />
+            </label>
+          </div>
           <label>
             Email
-            <input type="email" name="email" placeholder="you@example.com" required />
+            <input type="email" name="email" placeholder="you@example.com" autocomplete="email" required />
           </label>
-          <label>
-            Phone number
-            <input type="tel" name="phone" placeholder="(555) 123-4567" autocomplete="tel" />
-          </label>
+          <div class="form-row phone-row">
+            <label class="country-code-field">
+              Country code
+              <select name="country_code" autocomplete="tel-country-code" required>
+              <option value="+93">Afghanistan (+93)</option>
+              <option value="+355">Albania (+355)</option>
+              <option value="+213">Algeria (+213)</option>
+              <option value="+1-684">American Samoa (+1-684)</option>
+              <option value="+376">Andorra (+376)</option>
+              <option value="+244">Angola (+244)</option>
+              <option value="+1-264">Anguilla (+1-264)</option>
+              <option value="+1-268">Antigua and Barbuda (+1-268)</option>
+              <option value="+54">Argentina (+54)</option>
+              <option value="+374">Armenia (+374)</option>
+              <option value="+297">Aruba (+297)</option>
+              <option value="+61">Australia (+61)</option>
+              <option value="+43">Austria (+43)</option>
+              <option value="+994">Azerbaijan (+994)</option>
+              <option value="+1-242">Bahamas (+1-242)</option>
+              <option value="+973">Bahrain (+973)</option>
+              <option value="+880">Bangladesh (+880)</option>
+              <option value="+1-246">Barbados (+1-246)</option>
+              <option value="+375">Belarus (+375)</option>
+              <option value="+32">Belgium (+32)</option>
+              <option value="+501">Belize (+501)</option>
+              <option value="+229">Benin (+229)</option>
+              <option value="+1-441">Bermuda (+1-441)</option>
+              <option value="+975">Bhutan (+975)</option>
+              <option value="+591">Bolivia (+591)</option>
+              <option value="+387">Bosnia and Herzegovina (+387)</option>
+              <option value="+267">Botswana (+267)</option>
+              <option value="+55">Brazil (+55)</option>
+              <option value="+1-284">British Virgin Islands (+1-284)</option>
+              <option value="+673">Brunei (+673)</option>
+              <option value="+359">Bulgaria (+359)</option>
+              <option value="+226">Burkina Faso (+226)</option>
+              <option value="+257">Burundi (+257)</option>
+              <option value="+855">Cambodia (+855)</option>
+              <option value="+237">Cameroon (+237)</option>
+              <option value="+1">Canada (+1)</option>
+              <option value="+238">Cape Verde (+238)</option>
+              <option value="+1-345">Cayman Islands (+1-345)</option>
+              <option value="+236">Central African Republic (+236)</option>
+              <option value="+235">Chad (+235)</option>
+              <option value="+56">Chile (+56)</option>
+              <option value="+86">China (+86)</option>
+              <option value="+57">Colombia (+57)</option>
+              <option value="+269">Comoros (+269)</option>
+              <option value="+243">Congo, Democratic Republic of the (+243)</option>
+              <option value="+242">Congo, Republic of the (+242)</option>
+              <option value="+682">Cook Islands (+682)</option>
+              <option value="+506">Costa Rica (+506)</option>
+              <option value="+385">Croatia (+385)</option>
+              <option value="+53">Cuba (+53)</option>
+              <option value="+599">Curaçao (+599)</option>
+              <option value="+357">Cyprus (+357)</option>
+              <option value="+420">Czech Republic (+420)</option>
+              <option value="+225">Côte d’Ivoire (+225)</option>
+              <option value="+45">Denmark (+45)</option>
+              <option value="+253">Djibouti (+253)</option>
+              <option value="+1-767">Dominica (+1-767)</option>
+              <option value="+1-809">Dominican Republic (+1-809)</option>
+              <option value="+1-829">Dominican Republic (+1-829)</option>
+              <option value="+1-849">Dominican Republic (+1-849)</option>
+              <option value="+593">Ecuador (+593)</option>
+              <option value="+20">Egypt (+20)</option>
+              <option value="+503">El Salvador (+503)</option>
+              <option value="+240">Equatorial Guinea (+240)</option>
+              <option value="+291">Eritrea (+291)</option>
+              <option value="+372">Estonia (+372)</option>
+              <option value="+268">Eswatini (+268)</option>
+              <option value="+251">Ethiopia (+251)</option>
+              <option value="+500">Falkland Islands (+500)</option>
+              <option value="+298">Faroe Islands (+298)</option>
+              <option value="+679">Fiji (+679)</option>
+              <option value="+358">Finland (+358)</option>
+              <option value="+33">France (+33)</option>
+              <option value="+594">French Guiana (+594)</option>
+              <option value="+689">French Polynesia (+689)</option>
+              <option value="+241">Gabon (+241)</option>
+              <option value="+220">Gambia (+220)</option>
+              <option value="+995">Georgia (+995)</option>
+              <option value="+49">Germany (+49)</option>
+              <option value="+233">Ghana (+233)</option>
+              <option value="+350">Gibraltar (+350)</option>
+              <option value="+30">Greece (+30)</option>
+              <option value="+299">Greenland (+299)</option>
+              <option value="+1-473">Grenada (+1-473)</option>
+              <option value="+590">Guadeloupe (+590)</option>
+              <option value="+1-671">Guam (+1-671)</option>
+              <option value="+502">Guatemala (+502)</option>
+              <option value="+44-1481">Guernsey (+44-1481)</option>
+              <option value="+224">Guinea (+224)</option>
+              <option value="+245">Guinea-Bissau (+245)</option>
+              <option value="+592">Guyana (+592)</option>
+              <option value="+509">Haiti (+509)</option>
+              <option value="+504">Honduras (+504)</option>
+              <option value="+852">Hong Kong (+852)</option>
+              <option value="+36">Hungary (+36)</option>
+              <option value="+354">Iceland (+354)</option>
+              <option value="+91">India (+91)</option>
+              <option value="+62">Indonesia (+62)</option>
+              <option value="+98">Iran (+98)</option>
+              <option value="+964">Iraq (+964)</option>
+              <option value="+353">Ireland (+353)</option>
+              <option value="+44-1624">Isle of Man (+44-1624)</option>
+              <option value="+972">Israel (+972)</option>
+              <option value="+39">Italy (+39)</option>
+              <option value="+1-876">Jamaica (+1-876)</option>
+              <option value="+81">Japan (+81)</option>
+              <option value="+44-1534">Jersey (+44-1534)</option>
+              <option value="+962">Jordan (+962)</option>
+              <option value="+7">Kazakhstan (+7)</option>
+              <option value="+254">Kenya (+254)</option>
+              <option value="+686">Kiribati (+686)</option>
+              <option value="+383">Kosovo (+383)</option>
+              <option value="+965">Kuwait (+965)</option>
+              <option value="+996">Kyrgyzstan (+996)</option>
+              <option value="+856">Laos (+856)</option>
+              <option value="+371">Latvia (+371)</option>
+              <option value="+961">Lebanon (+961)</option>
+              <option value="+266">Lesotho (+266)</option>
+              <option value="+231">Liberia (+231)</option>
+              <option value="+218">Libya (+218)</option>
+              <option value="+423">Liechtenstein (+423)</option>
+              <option value="+370">Lithuania (+370)</option>
+              <option value="+352">Luxembourg (+352)</option>
+              <option value="+853">Macau (+853)</option>
+              <option value="+261">Madagascar (+261)</option>
+              <option value="+265">Malawi (+265)</option>
+              <option value="+60">Malaysia (+60)</option>
+              <option value="+960">Maldives (+960)</option>
+              <option value="+223">Mali (+223)</option>
+              <option value="+356">Malta (+356)</option>
+              <option value="+692">Marshall Islands (+692)</option>
+              <option value="+596">Martinique (+596)</option>
+              <option value="+222">Mauritania (+222)</option>
+              <option value="+230">Mauritius (+230)</option>
+              <option value="+262">Mayotte (+262)</option>
+              <option value="+52">Mexico (+52)</option>
+              <option value="+691">Micronesia (+691)</option>
+              <option value="+373">Moldova (+373)</option>
+              <option value="+377">Monaco (+377)</option>
+              <option value="+976">Mongolia (+976)</option>
+              <option value="+382">Montenegro (+382)</option>
+              <option value="+1-664">Montserrat (+1-664)</option>
+              <option value="+212">Morocco (+212)</option>
+              <option value="+258">Mozambique (+258)</option>
+              <option value="+95">Myanmar (+95)</option>
+              <option value="+264">Namibia (+264)</option>
+              <option value="+674">Nauru (+674)</option>
+              <option value="+977">Nepal (+977)</option>
+              <option value="+31">Netherlands (+31)</option>
+              <option value="+687">New Caledonia (+687)</option>
+              <option value="+64">New Zealand (+64)</option>
+              <option value="+505">Nicaragua (+505)</option>
+              <option value="+227">Niger (+227)</option>
+              <option value="+234">Nigeria (+234)</option>
+              <option value="+683">Niue (+683)</option>
+              <option value="+850">North Korea (+850)</option>
+              <option value="+389">North Macedonia (+389)</option>
+              <option value="+1-670">Northern Mariana Islands (+1-670)</option>
+              <option value="+47">Norway (+47)</option>
+              <option value="+968">Oman (+968)</option>
+              <option value="+92">Pakistan (+92)</option>
+              <option value="+680">Palau (+680)</option>
+              <option value="+970">Palestine (+970)</option>
+              <option value="+507">Panama (+507)</option>
+              <option value="+675">Papua New Guinea (+675)</option>
+              <option value="+595">Paraguay (+595)</option>
+              <option value="+51">Peru (+51)</option>
+              <option value="+63">Philippines (+63)</option>
+              <option value="+48">Poland (+48)</option>
+              <option value="+351">Portugal (+351)</option>
+              <option value="+1-787">Puerto Rico (+1-787)</option>
+              <option value="+1-939">Puerto Rico (+1-939)</option>
+              <option value="+974">Qatar (+974)</option>
+              <option value="+40">Romania (+40)</option>
+              <option value="+7">Russia (+7)</option>
+              <option value="+250">Rwanda (+250)</option>
+              <option value="+262">Réunion (+262)</option>
+              <option value="+590">Saint Barthélemy (+590)</option>
+              <option value="+290">Saint Helena (+290)</option>
+              <option value="+1-869">Saint Kitts and Nevis (+1-869)</option>
+              <option value="+1-758">Saint Lucia (+1-758)</option>
+              <option value="+590">Saint Martin (+590)</option>
+              <option value="+508">Saint Pierre and Miquelon (+508)</option>
+              <option value="+1-784">Saint Vincent and the Grenadines (+1-784)</option>
+              <option value="+685">Samoa (+685)</option>
+              <option value="+378">San Marino (+378)</option>
+              <option value="+966">Saudi Arabia (+966)</option>
+              <option value="+221">Senegal (+221)</option>
+              <option value="+381">Serbia (+381)</option>
+              <option value="+248">Seychelles (+248)</option>
+              <option value="+232">Sierra Leone (+232)</option>
+              <option value="+65">Singapore (+65)</option>
+              <option value="+1-721">Sint Maarten (+1-721)</option>
+              <option value="+421">Slovakia (+421)</option>
+              <option value="+386">Slovenia (+386)</option>
+              <option value="+677">Solomon Islands (+677)</option>
+              <option value="+252">Somalia (+252)</option>
+              <option value="+27">South Africa (+27)</option>
+              <option value="+82">South Korea (+82)</option>
+              <option value="+211">South Sudan (+211)</option>
+              <option value="+34">Spain (+34)</option>
+              <option value="+94">Sri Lanka (+94)</option>
+              <option value="+249">Sudan (+249)</option>
+              <option value="+597">Suriname (+597)</option>
+              <option value="+46">Sweden (+46)</option>
+              <option value="+41">Switzerland (+41)</option>
+              <option value="+963">Syria (+963)</option>
+              <option value="+239">São Tomé and Príncipe (+239)</option>
+              <option value="+886">Taiwan (+886)</option>
+              <option value="+992">Tajikistan (+992)</option>
+              <option value="+255">Tanzania (+255)</option>
+              <option value="+66">Thailand (+66)</option>
+              <option value="+670">Timor-Leste (+670)</option>
+              <option value="+228">Togo (+228)</option>
+              <option value="+690">Tokelau (+690)</option>
+              <option value="+676">Tonga (+676)</option>
+              <option value="+1-868">Trinidad and Tobago (+1-868)</option>
+              <option value="+216">Tunisia (+216)</option>
+              <option value="+90">Turkey (+90)</option>
+              <option value="+993">Turkmenistan (+993)</option>
+              <option value="+1-649">Turks and Caicos Islands (+1-649)</option>
+              <option value="+688">Tuvalu (+688)</option>
+              <option value="+1-340">U.S. Virgin Islands (+1-340)</option>
+              <option value="+256">Uganda (+256)</option>
+              <option value="+380">Ukraine (+380)</option>
+              <option value="+971">United Arab Emirates (+971)</option>
+              <option value="+44">United Kingdom (+44)</option>
+              <option value="+1" selected>United States (+1)</option>
+              <option value="+598">Uruguay (+598)</option>
+              <option value="+998">Uzbekistan (+998)</option>
+              <option value="+678">Vanuatu (+678)</option>
+              <option value="+39-06">Vatican City (+39-06)</option>
+              <option value="+58">Venezuela (+58)</option>
+              <option value="+84">Vietnam (+84)</option>
+              <option value="+681">Wallis and Futuna (+681)</option>
+              <option value="+967">Yemen (+967)</option>
+              <option value="+260">Zambia (+260)</option>
+              <option value="+263">Zimbabwe (+263)</option>
+            </select>
+            </label>
+            <label class="phone-number-field">
+              Phone number
+              <input type="tel" name="phone_number" placeholder="555 123 4567" autocomplete="tel-national" inputmode="tel" required />
+            </label>
+          </div>
           <label>
             Message
-            <textarea name="message" rows="5" placeholder="Tell us a little about your goals."></textarea>
+            <textarea name="message" rows="5" placeholder="Tell us a little about your goals." required></textarea>
           </label>
           <button class="btn btn-primary" type="submit">Request Consultation</button>
           <p class="form-note">Please do not include urgent medical information in this form.</p>
@@ -216,6 +558,35 @@
         <img src="assets/healix-logo-white.png" alt="Healix Clinic" />
         <p>Nutrition rooted in you. Guided by science.<sup class="tm">™</sup></p>
       </div>
+
+      <div class="footer-social" aria-label="Healix Clinic social media">
+        <p>Follow Healix Clinic</p>
+        <div class="social-links">
+          <a class="social-icon" href="https://www.instagram.com/healixclinic" target="_blank" rel="noopener noreferrer" aria-label="Healix Clinic on Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect>
+              <circle cx="12" cy="12" r="4"></circle>
+              <circle cx="17.5" cy="6.5" r="1.1"></circle>
+            </svg>
+          </a>
+          <a class="social-icon" href="https://www.tiktok.com/@healixclinic" target="_blank" rel="noopener noreferrer" aria-label="Healix Clinic on TikTok">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M14.2 3.2c.4 2.5 1.9 4 4.5 4.3v3.2c-1.6 0-3.1-.5-4.5-1.5v5.7c0 3.7-2.4 6.1-5.7 6.1-3 0-5.2-2-5.2-4.8 0-3 2.4-5 5.6-5 .4 0 .8 0 1.1.1v3.4c-.3-.1-.7-.2-1.1-.2-1.3 0-2.2.7-2.2 1.8s.8 1.8 1.9 1.8c1.3 0 2.2-.8 2.2-2.6V3.2h3.4z"></path>
+            </svg>
+          </a>
+          <a class="social-icon" href="https://www.facebook.com/people/Healix-Clinic/61591777888760/" target="_blank" rel="noopener noreferrer" aria-label="Healix Clinic on Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M14 8.2h3V4.8h-3.1c-3.1 0-4.8 1.8-4.8 4.8v2H6v3.6h3.1V22h3.8v-6.8h3.2l.6-3.6h-3.8V9.8c0-1 .4-1.6 1.1-1.6z"></path>
+            </svg>
+          </a>
+          <a class="social-icon" href="https://www.linkedin.com/company/healix-clinic/" target="_blank" rel="noopener noreferrer" aria-label="Healix Clinic on LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M5.2 8.8H9V21H5.2V8.8zm1.9-5.8c1.2 0 2.1.9 2.1 2s-.9 2-2.1 2C5.9 7 5 6.1 5 5s.9-2 2.1-2zM11 8.8h3.6v1.7c.5-1 1.8-1.9 3.8-1.9 3.5 0 4.6 2.3 4.6 5.4V21h-3.8v-6.4c0-1.7-.4-2.8-1.9-2.8-1.6 0-2.4 1.1-2.4 2.8V21H11V8.8z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
       <nav aria-label="Footer navigation">
         <a href="#method">Method</a>
         <a href="#services">Services</a>
