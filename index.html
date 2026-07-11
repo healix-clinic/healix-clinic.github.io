@@ -141,7 +141,7 @@
 
     /* Practice Better widget internal visual spacing adjustment
        Note: iframe contents are served by Practice Better, so parent CSS cannot directly add padding
-       inside the iframe. This scales the iframe content slightly smaller to create safe visual breathing room. */
+       inside the iframe. This scales the iframe content slightly smaller from the center to create safe visual breathing room horizontally and vertically. */
     .booking-widget-card {
       width: 100%;
       max-width: 100%;
@@ -168,14 +168,14 @@
 
     .booking-widget-card .better-inline-booking-widget iframe {
       position: absolute !important;
-      top: 0 !important;
+      top: 50% !important;
       left: 50% !important;
       width: 100% !important;
       height: 100% !important;
       border: 0 !important;
       display: block;
-      transform: translateX(-50%) scale(0.965);
-      transform-origin: top center;
+      transform: translate(-50%, -50%) scale(0.965);
+      transform-origin: center center;
       border-radius: 18px;
       box-sizing: border-box !important;
     }
@@ -188,7 +188,7 @@
       }
 
       .booking-widget-card .better-inline-booking-widget iframe {
-        transform: translateX(-50%) scale(0.97);
+        transform: translate(-50%, -50%) scale(0.97);
       }
     }
 
@@ -200,7 +200,7 @@
       }
 
       .booking-widget-card .better-inline-booking-widget iframe {
-        transform: translateX(-50%) scale(0.975);
+        transform: translate(-50%, -50%) scale(0.975);
       }
     }
 
