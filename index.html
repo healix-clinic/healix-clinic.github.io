@@ -96,7 +96,6 @@
       width: 100%;
       max-width: 100%;
       height: clamp(760px, 92vh, 1100px);
-      margin: 32px auto 0;
       padding: 18px;
       display: flex;
       align-items: stretch;
@@ -137,56 +136,71 @@
       .booking-widget-card {
         height: 780px;
         padding: 8px;
-        margin-top: 24px;
       }
     }
 
-  
-    /* Booking widget fit adjustment */
+    /* Practice Better widget internal visual spacing adjustment
+       Note: iframe contents are served by Practice Better, so parent CSS cannot directly add padding
+       inside the iframe. This scales the iframe content slightly smaller to create safe visual breathing room. */
     .booking-widget-card {
       width: 100%;
       max-width: 100%;
-      box-sizing: border-box !important;
-      padding: 14px !important;
+      height: clamp(760px, 92vh, 1100px);
+      margin: 32px auto 0;
+      padding: 18px !important;
       overflow: hidden;
+      box-sizing: border-box !important;
+      border-radius: 34px;
     }
 
     .booking-widget-card .better-inline-booking-widget {
-      width: calc(100% - 6px) !important;
-      max-width: calc(100% - 6px) !important;
+      position: relative !important;
+      width: 100% !important;
+      max-width: 100% !important;
       height: 100% !important;
       min-height: 100% !important;
       margin: 0 auto !important;
+      overflow: hidden !important;
+      border-radius: 24px;
+      background: #ffffff;
       box-sizing: border-box !important;
-      display: block;
     }
 
     .booking-widget-card .better-inline-booking-widget iframe {
+      position: absolute !important;
+      top: 0 !important;
+      left: 50% !important;
       width: 100% !important;
       height: 100% !important;
-      border: 0;
+      border: 0 !important;
       display: block;
+      transform: translateX(-50%) scale(0.965);
+      transform-origin: top center;
+      border-radius: 18px;
+      box-sizing: border-box !important;
     }
 
     @media (max-width: 768px) {
       .booking-widget-card {
-        padding: 10px !important;
+        height: 820px;
+        padding: 14px !important;
+        border-radius: 28px;
       }
 
-      .booking-widget-card .better-inline-booking-widget {
-        width: calc(100% - 4px) !important;
-        max-width: calc(100% - 4px) !important;
+      .booking-widget-card .better-inline-booking-widget iframe {
+        transform: translateX(-50%) scale(0.97);
       }
     }
 
     @media (max-width: 480px) {
       .booking-widget-card {
-        padding: 8px !important;
+        height: 780px;
+        padding: 10px !important;
+        border-radius: 22px;
       }
 
-      .booking-widget-card .better-inline-booking-widget {
-        width: 100% !important;
-        max-width: 100% !important;
+      .booking-widget-card .better-inline-booking-widget iframe {
+        transform: translateX(-50%) scale(0.975);
       }
     }
 
