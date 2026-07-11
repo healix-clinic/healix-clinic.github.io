@@ -139,14 +139,12 @@
       }
     }
 
-    /* Practice Better widget internal visual spacing adjustment
-       Note: iframe contents are served by Practice Better, so parent CSS cannot directly add padding
-       inside the iframe. This scales the iframe content slightly smaller from the center to create safe visual breathing room horizontally and vertically. */
+    /* Practice Better widget equal internal spacing adjustment */
     .booking-widget-card {
       width: 100%;
       max-width: 100%;
       height: clamp(760px, 92vh, 1100px);
-      margin: 32px auto 0;
+      margin: 26px auto 0;
       padding: 18px !important;
       overflow: hidden;
       box-sizing: border-box !important;
@@ -168,16 +166,16 @@
 
     .booking-widget-card .better-inline-booking-widget iframe {
       position: absolute !important;
-      top: 50% !important;
-      left: 50% !important;
-      width: 100% !important;
-      height: 100% !important;
+      top: 18px !important;
+      left: 18px !important;
+      width: calc(100% - 36px) !important;
+      height: calc(100% - 36px) !important;
       border: 0 !important;
       display: block;
-      transform: translate(-50%, -50%) scale(0.965);
-      transform-origin: center center;
-      border-radius: 18px;
+      border-radius: 16px;
       box-sizing: border-box !important;
+      transform: none !important;
+      transform-origin: center center;
     }
 
     @media (max-width: 768px) {
@@ -188,7 +186,10 @@
       }
 
       .booking-widget-card .better-inline-booking-widget iframe {
-        transform: translate(-50%, -50%) scale(0.97);
+        top: 14px !important;
+        left: 14px !important;
+        width: calc(100% - 28px) !important;
+        height: calc(100% - 28px) !important;
       }
     }
 
@@ -200,7 +201,10 @@
       }
 
       .booking-widget-card .better-inline-booking-widget iframe {
-        transform: translate(-50%, -50%) scale(0.975);
+        top: 10px !important;
+        left: 10px !important;
+        width: calc(100% - 20px) !important;
+        height: calc(100% - 20px) !important;
       }
     }
 
