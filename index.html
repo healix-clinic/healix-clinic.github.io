@@ -90,7 +90,58 @@
         height: 40px;
       }
     }
-</style>
+
+    /* Booking widget maximized to fill the request section container */
+    .booking-widget-card {
+      width: 100%;
+      max-width: 100%;
+      height: clamp(760px, 92vh, 1100px);
+      margin: 32px auto 0;
+      padding: 18px;
+      display: flex;
+      align-items: stretch;
+      justify-content: stretch;
+      border-radius: 34px;
+      box-sizing: border-box;
+    }
+
+    .better-inline-booking-widget {
+      width: 100% !important;
+      max-width: 100% !important;
+      height: 100% !important;
+      min-height: 100% !important;
+      margin: 0;
+      border-radius: 26px;
+      box-sizing: border-box;
+    }
+
+    @media (max-width: 1024px) {
+      .booking-widget-card {
+        height: clamp(760px, 88vh, 1000px);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .booking-widget-card {
+        height: 820px;
+        padding: 12px;
+        border-radius: 28px;
+      }
+
+      .better-inline-booking-widget {
+        border-radius: 22px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .booking-widget-card {
+        height: 780px;
+        padding: 8px;
+        margin-top: 24px;
+      }
+    }
+
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -284,7 +335,7 @@
             data-hash="68ef0f2fb4624b4c78afd2e6"
             data-theme="024735"
             data-theme-accent="c9b37e"
-            style="width:100%;max-width:550px;height:800px;"
+            style="width:100%;max-width:100%;height:100%;"
             data-scrollbar-visible="false"></div>
 </div>
       </div>
