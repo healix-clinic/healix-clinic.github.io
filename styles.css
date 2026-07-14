@@ -200,6 +200,28 @@ a { color: inherit; }
 .founder-grid { display: grid; grid-template-columns: 360px 1fr; gap: 62px; align-items: center; }
 .founder-photo { aspect-ratio: 4 / 5; border-radius: 200px 200px var(--radius-xl) var(--radius-xl); background: linear-gradient(160deg, var(--soft-sage), #fffdf9); border: 1px solid rgba(145,177,169,.45); display: grid; place-items: center; text-align: center; color: var(--botanical); box-shadow: var(--shadow-card); }
 .monogram { width: 124px; height: 124px; border-radius: 50%; border: 1px solid rgba(201,179,126,.62); display: grid; place-items: center; font-family: var(--heading); font-size: 44px; color: var(--emerald); background: rgba(255,255,255,.5); }
+
+.founder-photo.founder-photo-image {
+  padding: 0;
+  overflow: hidden;
+  display: block;
+  background: linear-gradient(160deg, var(--warm-ivory), #fffdf9);
+}
+
+.founder-photo.founder-photo-image picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.founder-photo.founder-photo-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
 .founder-photo p { margin: 0; font-size: 12px; text-transform: uppercase; letter-spacing: .18em; font-weight: 700; }
 .founder-copy p:not(.eyebrow) { font-size: 18px; color: rgba(32,53,47,.8); }
 .team-role { margin-top: -10px; margin-bottom: 18px; color: var(--champagne) !important; font-size: 13px !important; text-transform: uppercase; letter-spacing: .2em; font-weight: 800; }
